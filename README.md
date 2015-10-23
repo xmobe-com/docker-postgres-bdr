@@ -1,4 +1,4 @@
-# Docker image for postgres 9.4 with BDR support
+# Docker image for PostgreSQL with BDR support
 
 Based on Debian Jessie. Includes a patched postgres with support for [BDR](http://bdr-project.org/)
 
