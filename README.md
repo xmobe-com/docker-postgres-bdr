@@ -34,3 +34,5 @@ SELECT bdr.bdr_group_join(
 ```
 
 (Make sure to replace node names and hosts with appropriate values)
+
+[![Build Status](https://travis-ci.org/jgiannuzzi/docker-postgres-bdr.svg?branch=master)](https://travis-ci.org/jgiannuzzi/docker-postgres-bdr)

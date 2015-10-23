@@ -1,0 +1,16 @@
+language: bash
+
+# for secret experimental features ;)
+sudo: 9000
+
+install:
+  - git clone https://github.com/docker-library/official-images.git ~/official-images
+
+script:
+  - docker build -t postgres .
+  - ~/official-images/test/run.sh postgres
+
+after_script:
+  - docker images
+
+# vim:set et ts=2 sw=2:
