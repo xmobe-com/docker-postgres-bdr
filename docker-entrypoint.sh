@@ -42,7 +42,9 @@ if [ "$1" = 'postgres' ]; then
 			authMethod=trust
 		fi
 
-		{ echo; echo "host all all 0.0.0.0/0 $authMethod"; } >> "$PGDATA/pg_hba.conf"
+		{ echo; echo "host all all 0.0.0.0/0 $authMethod";
+			echo "host replication all 0.0.0.0/0 $authMethod";
+		} >> "$PGDATA/pg_hba.conf"
 		{ echo; echo "shared_preload_libraries = 'bdr'";
 			echo "wal_level = 'logical'";
 			echo "track_commit_timestamp = on";
