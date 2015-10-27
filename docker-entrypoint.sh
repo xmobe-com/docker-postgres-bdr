@@ -51,6 +51,7 @@ if [ "$1" = 'postgres' ]; then
 			echo "max_wal_senders = 10";
 			echo "max_replication_slots = 10";
 			echo "max_worker_processes = 10";
+			echo "default_sequenceam = 'bdr'";
 		} >> "$PGDATA"/postgresql.conf
 
 		# internal start of server in order to allow set-up using psql-client		
