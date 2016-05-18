@@ -24,7 +24,7 @@ RUN mkdir /docker-entrypoint-initdb.d
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 855AF5C7B897656417FA73D65D941908AA7A6805
 
 ENV PG_MAJOR 9.4
-ENV PG_VERSION 9.4.5-2jessie
+ENV PG_VERSION 9.4.8-1jessie
 
 RUN echo 'deb http://packages.2ndquadrant.com/bdr/apt/ jessie-2ndquadrant main' > /etc/apt/sources.list.d/2ndquadrant.list
 
