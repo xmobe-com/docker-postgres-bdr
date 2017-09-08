@@ -29,7 +29,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys B97B0AFCAA1A4
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 855AF5C7B897656417FA73D65D941908AA7A6805
 
 ENV PG_MAJOR 9.4
-ENV PG_VERSION 9.4.12-1.jessie+1
+ENV PG_VERSION 9.4.13-1.jessie+1
 
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
 RUN echo 'deb http://packages.2ndquadrant.com/bdr/apt/ jessie-2ndquadrant main' > /etc/apt/sources.list.d/2ndquadrant.list
