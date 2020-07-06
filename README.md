@@ -5,6 +5,11 @@ Based on Debian Jessie. Includes a patched postgres with support for [BDR](http:
 Image heavily borrowed from the [official image](https://github.com/docker-library/postgres) for postgres.
 Look there for further usage instructions.
 
+Sample Build
+```bash
+docker build . -t postgres-bd
+```
+
 ## Quick setup
 
 Create a database on each node, eg named bdrdemo. Then, connect to the
